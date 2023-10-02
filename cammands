@@ -1,0 +1,67 @@
+# Get a list of services and filter those that are currently running
+Get-Service | Where-Object { $_.Status -eq 'Running' }
+
+# Test network connectivity to google.com using ICMP (ping)
+Test-Connection -ComputerName google.com
+
+# Retrieve events from the Application event log
+Get-EventLog -LogName Application
+
+# Retrieve system information using Windows Management Instrumentation (WMI)
+Get-WmiObject -Class Win32_ComputerSystem
+
+# Retrieve system information using WMI again
+Get-WmiObject -Class Win32_ComputerSystem
+
+# Read the content of a text file located at C:\example.txt
+Get-Content -Path C:\example.txt
+
+# Set the execution policy to RemoteSigned to allow running scripts
+Set-ExecutionPolicy RemoteSigned
+
+# Create a new directory named "NewFolder" at C:\
+New-Item -ItemType Directory -Path C:\NewFolder
+
+# Get help and documentation for the Get-Process cmdlet
+Get-Help Get-Process
+
+# Test network connectivity to google.com using ICMP (ping)
+Test-Connection -ComputerName google.com
+
+# Get a list of all services on the system
+Get-Service
+
+# Send an HTTP request to https://example.com
+Invoke-WebRequest -Uri https://example.com
+
+# Install a PowerShell module named "SomeModule"
+Install-Module -Name SomeModule
+
+# Import a PowerShell module named "SomeModule" for use
+Import-Module SomeModule
+
+# List files and directories in the path C:\MyFolder
+Get-ChildItem -Path C:\MyFolder
+
+# Create a new PowerShell script file named "YourScript.ps1" at the specified path
+New-Item -Path C:\Path\To\YourScript.ps1 -ItemType File
+
+# Create a new PowerShell script file named "script.ps1" in the "New folder" directory
+New-Item -Path "C:\Users\Administrator\Desktop\New folder\script.ps1" -ItemType File
+
+# Open the PowerShell script "YourScript.ps1" using Notepad
+notepad C:\Users\Administrator\Desktop\New folder\YourScript.ps1
+
+# Display the contents of the PowerShell script "Script.ps1"
+Get-Content "C:\Users\Administrator\Desktop\New folder\Script.ps1"
+
+# Change the current working directory to "C:\Users\Administrator\Desktop\New folder"
+cd "C:\Users\Administrator\Desktop\New folder"
+
+# Run the PowerShell script "Script.ps1" in the current directory
+.\Script.ps1
+
+# Set the execution policy to RemoteSigned (again)
+Set-ExecutionPolicy RemoteSigned
+
+
